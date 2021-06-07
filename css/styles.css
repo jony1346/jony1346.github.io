@@ -10997,6 +10997,10 @@ section {
     visibility: hidden;
     display: none;
   }
+
+  .text-center-mobile {
+    text-align: center !important;
+  }
 }
 section.cta {
   position: relative;

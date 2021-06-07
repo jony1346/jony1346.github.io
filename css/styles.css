@@ -10985,6 +10985,11 @@ section {
     min-height: 600px;
     width: 100%;
   }
+
+  .flipbook-mobile {
+    visibility: hidden;
+    display: none;
+  }
 }
 @media screen and (max-width: 600px) {
   #mail {

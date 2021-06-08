@@ -40,6 +40,8 @@ function SubForm (){
         data:$("#buyform").serializeArray(),
         success: function(){
             alert("Form Data Submitted :)")
+            document.getElementById("buyform").reset();
+            $('#buymodal').modal('hide');
         },
         error: function(){
             alert("There was an error :(")

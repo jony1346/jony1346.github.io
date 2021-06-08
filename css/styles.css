@@ -10992,6 +10992,15 @@ section {
     display: none;
   }
 }
+.right {
+  right: 0 !important;
+  padding: 1rem 0.4rem !important;
+}
+
+.close-right {
+  margin: 0 !important;
+}
+
 @media screen and (max-width: 600px) {
   #mail {
     visibility: hidden;

@@ -32,3 +32,19 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+function SubForm (){
+    $.ajax({
+        url:"https://api.apispreadsheets.com/data/13715/",
+        type:"post",
+        data:$("#buyform").serializeArray(),
+        success: function(){
+            alert("Form Data Submitted :)")
+        },
+        error: function(){
+            alert("There was an error :(")
+        }
+    });
+
+    return false;
+}

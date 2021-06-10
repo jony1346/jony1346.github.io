@@ -34,7 +34,7 @@ window.addEventListener('DOMContentLoaded', event => {
 });
 
 function changecountbooks() {
-    $("#price").val("₪" + ($("#countbooks").val() * 50).toString());
+    $("#price").val("₪" + ($("#countbooks").val() * 64).toString());
 }
 
 function SubForm (){

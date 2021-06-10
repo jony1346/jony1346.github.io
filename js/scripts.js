@@ -33,6 +33,10 @@ window.addEventListener('DOMContentLoaded', event => {
 
 });
 
+function changecountbooks() {
+    $("#price").val("₪" + ($("#countbooks").val() * 50).toString());
+}
+
 function SubForm (){
     $.ajax({
         url:"https://api.apispreadsheets.com/data/13715/",
@@ -41,7 +45,6 @@ function SubForm (){
         success: function(){
             alert("Form Data Submitted :)")
             document.getElementById("buyform").reset();
-            $('#buymodal').modal('hide');
         },
         error: function(){
             alert("There was an error :(")

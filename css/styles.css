@@ -11011,6 +11011,11 @@ section {
     text-align: center !important;
   }
 }
+.form-floating > label {
+  right: 0 !important;
+  left: auto;
+}
+
 section.cta {
   position: relative;
   padding: 15rem 0;

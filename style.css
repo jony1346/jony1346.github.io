@@ -183,6 +183,10 @@ section {
     cursor: pointer;
 }
 
+#lecture a {
+    color: black
+}
+
 #lecture .content {
     text-align: center;
     font-size: 20px;

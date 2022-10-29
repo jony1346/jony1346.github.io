@@ -2,7 +2,7 @@
 /* font = #7e6a3e */
 
 * {
-    /* font-family: 'Assistant', sans-serif; */
+    font-family: 'Assistant', sans-serif;
 }
 
 html,
@@ -44,7 +44,7 @@ section {
     text-align: center;
 }
 
-.chapter {
+.chapter * {
     line-height: 1.4;
     font-family: 'Frank Ruhl Libre', serif;
 }
@@ -95,11 +95,11 @@ section {
 }
 
 .news-card-wrap {
-    flex: 0 0 25%;
+    flex: 4 0 25%;
     display: flex;
     padding: 10px;
     /* gutter width */
-    align-items: stretch;
+    /* align-items: stretch; */
     /*stretches all cards same height*/
     margin-bottom: 20px;
 }
@@ -185,7 +185,12 @@ section {
 
 #lecture .content {
     text-align: center;
-    font-size: larger;
+    font-size: 20px;
+}
+
+#lecture .row {
+    align-items: center;
+    text-align: center;
 }
 
 #lecture .up {
@@ -204,8 +209,28 @@ section {
     transform: rotate(10deg);
 }
 
+@media only screen and (max-width: 900px) {
+    #lecture .down {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #lecture .up {
+        width: 60%;
+    }
+}
+
 #author {
     background-color: #b6995a4a;
+}
+
+#author .content {
+    font-size: 20px;
+}
+
+#author a {
+    color: white;
 }
 
 #reservation {
@@ -213,13 +238,19 @@ section {
     text-align: center;
 }
 
-#reservation .col img {
-    margin: 10px;
+#reservation .row {
+    align-items: center;
 }
 
 #reservation img {
-    width: 150px;
     display: block;
+    margin: 0 auto;
+    width: 60%;
+    margin-bottom: 10px;
+}
+
+#hacibesisi p {
+    font-size: 20px;
 }
 
 footer {

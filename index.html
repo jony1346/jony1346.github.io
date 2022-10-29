@@ -49,7 +49,7 @@
                                 <a class="nav-link" href="#reservation">רכישה מקוונת</a>
                             </li>
                             <li class="nav-item active">
-                                <a class="nav-link" href="#hacibesisi">הכי בסיסי</a>
+                                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#hacibesisi">הכי בסיסי</a>
                             </li>
                         </ul>
                     </div>
@@ -107,7 +107,6 @@
                 </div>
                 <button type="button" class="btn btn-read-chapter" data-bs-toggle="modal" data-bs-target="#chapter">
                     להמשך קריאה </button>
-
             </div>
         </section>
         <section id="news">
@@ -180,6 +179,18 @@
                             </div>
                         </div>
                     </div>
+                    <div class="news-card-wrap">
+                        <div class="news-card">
+                            <img src="assest/img/news/kolbarama.PNG" class="image-web">
+                            <div class="content">
+                                <p class="title">קול ברמה - הכול עשר עם רונן גרוס</p>
+
+                                <audio id="item-audio-player" preload="none" controls="" style="max-width:100%;">
+                                    <source src="https://kolba-vod.streamgates.net/kol_barama/AOD/12.09.22הכל עשר.mp3#t=01:01:38&s=01:09:00" type="audio/mp3">
+                                </audio>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -229,24 +240,26 @@
             <div class="container">
                 <h2 class="topic">הזמנת הרצאה</h2>
                 <div class="row">
-                    <div class="col-md-8">
+                    <div class="col-3">
+                        <img src="assest/img/lecture/down.jpg" class="down" width="100%" />
+                    </div>
+                    <div class="col-md-6">
                         <div class="content">
-                            <p>בהרצאה, ננסה להבין יחד – מה הפך את הרב עובדיה יוסף</p>
-                            <p>להיות הרב עובדיה שכולנו מכירים...</p>
+                            <p>בהרצאה, ננסה להבין יחד – מה הפך את הרב עובדיה יוסף<br />
+                                להיות הרב עובדיה שכולנו מכירים...</p>
                             <br />
-                            <p>כדי למצוא תשובה, נחזור יחד אל רגעי השיא והשפל בחייו של הרב,
-                            אל בית הילדות ואל הקושי הכלכלי, אל הימים במצרים ואל האיומים על חייו,
-                            אל הדרך שבה עיצב את פסיקתו ואל הפגישה הראשונה שלו עם רעייתו,
-                            וגם אל מפגשים עם מנהיגי תבל ואל חלומות מיסטיים.
-                            את כל אלו, נעשה בצירוף תמונות ומסמכים נדירים.</p>
+                            כדי למצוא תשובה, נחזור יחד אל רגעי השיא והשפל בחייו של הרב,<br />
+                            אל בית הילדות ואל הקושי הכלכלי, אל הימים במצרים ואל האיומים על חייו, <br />
+                            אל הדרך שבה עיצב את פסיקתו ואל הפגישה הראשונה שלו עם רעייתו,<br />
+                            וגם אל מפגשים עם מנהיגי תבל ואל חלומות מיסטיים.<br />
+                            את כל אלו, נעשה בצירוף תמונות ומסמכים נדירים.</br>
                             <br />
                             <p>משך ההרצאה: שעה</p>
                             <p>ליצירת קשר: itamaredel@gmail.com</p>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <img src="assest/img/lecture/up.jpg" class="up" width="80%" />
-                        <img src="assest/img/lecture/down.jpg" class="down" width="80%" />
+                    <div class="col-md-3">
+                        <img src="assest/img/lecture/up.jpg" class="up" width="100%" />
                     </div>
                 </div>
             </div>
@@ -255,10 +268,21 @@
             <div class="container">
                 <div class="row">
                     <div class="col-4">
-                        <img src="assest\img\itamar.jpg" width="60%" />
+                        <img src="assest\img\itamar.jpg" class="img-thumbnail" width="100%" />
                     </div>
                     <div class="col-8">
-
+                        <div class="content">
+                            <h2>איתמר אדלשטיין</h2>
+                            <p>
+                                מתמחה בעריכת דין בייעוץ המשפטי לוועדות החוץ והביטחון וביטחון הפנים של הכנסת,<br>
+                                סטודנט במסלול לדוקטורט בפקולטה למשפטים באוניברסיטה העברית בירושלים וכותב נאומים.<br>
+                                הוא בוגר ישיבת ההסדר במעלה אדומים,<br>
+                                היה עוזרו של מ"מ פרקליט המדינה ויו"ר אגודת הסטודנטים למשפטים באוניברסיטה העברית.<br>
+                            </p>
+                            <p>
+                                ספרו הראשון <a href="#" data-bs-toggle="modal" data-bs-target="#hacibesisi">הכי בסיסי</a> ראה גם הוא אור בהוצאת ידיעות אחרונות
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -360,6 +384,38 @@
                         <p>הכלה הבינה כי אין כאן מקרה, ולכן היא פנתה אל הרב עובדיה הצעיר ושאלה אותו אם לא יראה איתה סרטים בשום מקרה. כאשר הבינה כי התשובה של חתנה המיועד שלילית, הסכימו השניים, מתוך צער אך גם הבנה כנה, על כך שככל הנראה הם אינם מתאימים, והשידוך בוטל.</p>
                         <p>נחת זה לא הוסיף, מתח דווקא כן, וגם נטל כלכלי בשל החוב שהוטל עליו לשלם למשפחת הכלה הדחויה. כיוון שהכלה לשעבר לא קיבלה את הדברים בקלות, היא פנתה אל בית הדין ותבעה על עוגמת נפש. בית הדין שמע את טיעוני הצדדים ופסק כנגדה, אולם הנחה את הרב עובדיה המדוכדך לשלם לה עשר לירות לפנים משורת הדין. משום שלרב עובדיה לא היו פרוטות מיותרות בארנקו ולמעשה כלל לא היה לו ארנק, הוא ביקש רשות לשלם בתשלומים - לירה אחת בכל חודש שאותה הרוויח מכריכת ספרים.</p>
                         <p>כעת הסכימו כולם שבשלה העת למצוא כלה לרב. ואז, ערב אחד, נכנס הרב עובדיה לחנות רהיטים.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="hacibesisi" tabindex="-1" aria-labelledby="hacibesisi" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">הכי בסיסי - איתמר</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body ">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="assest/img/hacibsisi/cover.jpg" width="100%">
+                        </div>
+                        <div class="col-8">
+                            <h2>הכי בסיסי</h2>
+                            <hr>
+                            <p>
+                                הכי בסיסי, ספרו הראשון של איתמר אדלשטיין, יצא לאור בשנת 2018 בהוצאת 'ידיעות ספרים'<br />
+                                הכי בסיסי הוא הזמנה פתוחה להבין את העולם הדתי, מנהגיו, אמונותיו ואורחות חייו.<br /><br />
+                                הספר מורכב מתשובות לשאלות שהפנו חיילים שאינם שומרי תורה ומצוות אל שותפיהם הדתיים לשירות הצבאי. הוא נולד על מגרש המסדרים של בה"ד 1 במצפה רמון, מתוך ההבנה כי ידיעת מהות וסיבת המצוות והמנהגים, ההעמקה בהם והרצון ללומדם, מחזקים בראש ובראשונה את החייל או החיילת שהתחנכו לשמירת המסורת, אך בד בבד גם מסייעים ליצירת דיאלוג מעמיק ופורה בינם לבין אלה שמבקשים להבינם.<br /><br />
+                                כל מי שחי בחברה הישראלית מוזמן בזאת למסע אל מאחורי הקלעים של המצוות הקלאסיות והשגרתיות, אל מהות מנהגי היום-יום. מעבר להעמקה בתשובות רבני ישראל לאורך הדורות, נלמד מהסופר ש"י עגנון על הקדיש, מהמלך פרנץ יוזף על מנהג הסנדקות, מאפרים קישון על קבלת מתנות וממלך כוזר על נדנוד בתפילה. סוגיות מגוונות אחרות, כמו אמונה בשואה, גידול בעלי חיים וחשיבות המסלולים התורניים בצה"ל נסקרות אף הן בספר זה.
+                            </p>
+                            <a href="https://www.ybook.co.il/book/7234/%D7%94%D7%9B%D7%99-%D7%91%D7%A1%D7%99%D7%A1%D7%99">
+                            <button type="button" class="btn btn-read-chapter" data-bs-toggle="modal" data-bs-target="#chapter">
+                                להמשך קריאה </button>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -99,7 +99,7 @@ section {
     display: flex;
     padding: 10px;
     /* gutter width */
-    /* align-items: stretch; */
+    align-items: stretch;
     /*stretches all cards same height*/
     margin-bottom: 20px;
 }
@@ -213,7 +213,7 @@ section {
     transform: rotate(10deg);
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 767px) {
     #lecture .up  {
         width: 60%;
         -webkit-transform:rotate(0deg);

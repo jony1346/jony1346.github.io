@@ -183,8 +183,7 @@ section {
 }
 
 #news .arrow {
-    color: black !important;
-    background-color: #eae1cf;
+    background-color: blue;
 }
 
 #lecture a {

@@ -83,7 +83,6 @@ section {
     margin-bottom: 30px;
 }
 
-
 #news {
     /* background-color: #922f3473; */
     text-align: center;
@@ -183,6 +182,11 @@ section {
     cursor: pointer;
 }
 
+#news .arrow {
+    color: black !important;
+    background-color: #eae1cf;
+}
+
 #lecture a {
     color: black
 }
@@ -269,4 +273,23 @@ footer {
     background-color: #922f34;
     border-top: 0.05rem solid #b5985a;
     text-align: center
+}
+
+/*******************************/
+
+@media (max-width: 768px) {
+    .mobile {
+        display: block;
+    }
+    .pc {
+        display: none;
+    }
+  }
+  @media (min-width: 768px) {
+    .mobile {
+        display: none;
+    }
+    .pc {
+        display: block;
+    }
 }
